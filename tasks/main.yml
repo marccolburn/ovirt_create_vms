@@ -1,0 +1,9 @@
+---
+- name: Creates a new Virtual Machines from templates
+  ovirt_vm:
+    state: present
+    name: "{{ item.name }}"
+    template: "{{ item.template }}"
+    cluster: "{{ ovirt_cluster }}"
+    nics: "{{ item.nics }}"
+  loop: "{{ virtual_machines }}"

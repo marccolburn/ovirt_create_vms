@@ -1,0 +1,10 @@
+---
+virtual_machines:
+  - name: ansiblesrx1
+    template: vsrx192_template
+    cluster: default
+    nics:
+      - name: nic1
+        interface: virtio
+        profile_name: vm_outside
+      
