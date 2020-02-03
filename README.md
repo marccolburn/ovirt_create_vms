@@ -14,9 +14,9 @@ virtual_machines:
 * template: Template to create VM off of
 * cluster: oVirt cluster VM should be created on
 * nics: List of NICs to attach
-** name: Name of NIC
-** interface: Interface type [e1000,virtio,etc.]
-** profile_name: vNIC profile to attach
+  * name: Name of NIC
+  * interface: Interface type [e1000,virtio,etc.]
+  * profile_name: vNIC profile to attach
 
 Dependencies
 ------------
