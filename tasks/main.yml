@@ -4,7 +4,7 @@
     state: present
     name: "{{ item.name }}"
     template: "{{ item.template }}"
-    cluster: "{{ ovirt_cluster }}"
+    cluster: "{{ item.cluster }}"
     nics: "{{ item.nics }}"
     clone: True
   loop: "{{ virtual_machines }}"
