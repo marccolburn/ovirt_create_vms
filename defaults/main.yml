@@ -1,4 +1,5 @@
 ---
+state: present
 virtual_machines:
   - name: ansiblesrx1
     template: vsrx192_template

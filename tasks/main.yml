@@ -1,7 +1,7 @@
 ---
 - name: Creates a new Virtual Machines from templates
   ovirt_vm:
-    state: present
+    state: "{{ state }}"
     name: "{{ item.name }}"
     template: "{{ item.template }}"
     cluster: "{{ item.cluster }}"
